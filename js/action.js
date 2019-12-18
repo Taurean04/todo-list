@@ -10,9 +10,8 @@ const handleItem = itemName => {
     items.forEach(item => {
         if(item.querySelector('.item-name').textContent === itemName){
             item.querySelector('.complete-item').addEventListener('click', () => {
-                item.querySelector('.item-name').classlist.toggle('completed');
-                this.classlist.toggle('visibility');
-                console.log('mee');
+                item.querySelector('.item-name').classList.toggle('completed');
+                item.querySelector('.complete-item').classList.toggle('visibility');
             });
 
             item.querySelector('.edit-item').addEventListener('click', () => {
